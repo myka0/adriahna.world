@@ -1,0 +1,56 @@
+.highlight-green {
+  background-color: #82f300;
+  display: inline-block;
+  padding: 4%;
+}
+
+.highlight-pink {
+  background-color: #e6167a;
+  display: inline-block;
+  padding: 4%;
+}
+
+.highlight-black {
+  background-color: black;
+  display: inline-block;
+  padding: 4%;
+}
+
+.image-container {
+  flex: 0 0 30%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.scroll-left {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: rgb(0, 0, 0);
+  color: #e6167a;
+  border: 1px solid#e6167a;
+}
+.scroll-left p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  animation: scroll-left 18s linear infinite;
+}
+/* Move it (define the animation) */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

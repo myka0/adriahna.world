@@ -1,0 +1,68 @@
+:root {
+  --text-normal: #dfd7e8;
+  --text-dark: #82f300;
+  --text-special: #a77bff;
+  --text-hover: #e6167a;
+  --background-normal: #493755;
+  --bars-background: #541dcc;
+
+  --img-hover-background: #f464cbaa;
+}
+
+/* Navbar styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  background-image: url("../images/gridbackground.jpg");
+}
+
+.header-text {
+  color: var(--text-special);
+  align-items: center;
+}
+
+.body-text {
+  color: var(--text-normal);
+  margin: 16px;
+}
+
+.name {
+  font-weight: bold;
+  color: #7ee344;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  height: 75px;
+  align-items: center;
+  background-color: var(--bars-background);
+}
+
+/* Footer */
+footer {
+  background-color: var(--bars-background);
+  color: var(--text-dark);
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  text-decoration: solid;
+  color: var(--text-dark);
+  font-size: 18pt;
+}
+
+a:hover {
+  color: var(--text-hover);
+}
